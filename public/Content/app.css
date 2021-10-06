@@ -1,10 +1,19 @@
 /*Custom CSS*/ 
+/*
+    File Name: app.css
+    Full Name: Aleksandr Sokolov
+    StudentID: 301139655
+    Date: 2021-10-06
+*/
+
+/*Heading for each page: */
 .jumbotron {
     padding: 0px;
     text-align: center;
     background-color: white;
 }
 
+/*Div text blocks for the Home Page implemented with text*/
 .homeLeft {
     width: 47%;
     height: 30em;
@@ -31,6 +40,7 @@
     margin-bottom: 5em;
 }
 
+/*Div text block for the Home Page implemented with text*/
 .about {
     width: 70%;
     height: 19em;
@@ -44,7 +54,7 @@
     background-image: url("/Assets/images/portfolioBackground.jpg");
     float: right;
 }
-
+/*Div which alligns 3 divs with texts into a row*/
 .infoContainer {
     margin-top: 23em;
     display: flex;
@@ -63,12 +73,13 @@
     padding: 1em;
     background-image: url("/Assets/images/infoBackground.jpg");
 }
-
+/*Updated div blocks for the Services Page*/
 #services > div {
     height: 10em;
     margin-top: -20em;
 }
 
+/*Div blocks for the project description on Projects Page*/
 div.project {
 	background-image: url("/Assets/images/propertyBackground.jpg");
 	box-shadow: 0 0 2px 2px dimgray;
@@ -78,6 +89,7 @@ div.project {
     padding: 3em;
     color: whitesmoke;
 }
+
 div.projectDesc {
 	display: inline-block;
 	margin-top: 50px;
@@ -85,7 +97,7 @@ div.projectDesc {
 	width: 69%;
 	text-align: center;
 }
-
+/*Thumbnail Image of each project*/
 .project-thumbnail {
     position: relative;
     bottom: 2em;
@@ -94,7 +106,7 @@ div.projectDesc {
 	width: 27em;
 	height: 25em;
 }
-
+/*Form for my contact info on Contact Me Page*/
 .card {
     width: 40%;
     float: left;
