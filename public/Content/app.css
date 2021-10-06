@@ -45,7 +45,7 @@
     float: right;
 }
 
-#infoContainer {
+.infoContainer {
     margin-top: 23em;
     display: flex;
     flex-direction: row;
@@ -56,12 +56,17 @@
     margin-right: 5em;
 }
 
-#infoContainer > div {
+.infoContainer > div {
     width: 27%;
     height: 20em;
     color: whitesmoke;
     padding: 1em;
     background-image: url("/Assets/images/infoBackground.jpg");
+}
+
+#services > div {
+    height: 10em;
+    margin-top: -20em;
 }
 
 div.project {
