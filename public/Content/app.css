@@ -1,1 +1,75 @@
 /*Custom CSS*/ 
+.jumbotron {
+    padding: 0px;
+    text-align: center;
+    background-color: white;
+}
+
+.homeLeft {
+    width: 47%;
+    height: 30em;
+    padding-top: 100px;
+    padding-left: 3em;
+    background-color: transparent;
+    background-image: url("/Assets/images/city.jpg");
+    float: left;
+    margin-left: 2em;
+    margin-bottom: 5em;
+}
+.homeRight {
+    width: 47%;
+    height: 30em;
+    padding-top: 100px;
+    padding-left: 2em;
+    padding-right: 5em;
+    background-color: transparent;
+    background-image: url("/Assets/images/AILogo.jpg");
+    background-repeat: no-repeat;
+    float: right;
+    margin-right: 3em;
+    color:cornsilk;
+    margin-bottom: 5em;
+}
+
+.about {
+    width: 70%;
+    height: 19em;
+    margin-right: 5em;
+    padding-top: 3em;
+    padding-left: 3em;
+    padding-right: 3em;
+    background-repeat: no-repeat;
+    display: block;
+    color: whitesmoke;
+    background-image: url("/Assets/images/portfolioBackground.jpg");
+    float: right;
+}
+
+#infoContainer {
+    margin-top: 23em;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    margin-bottom: 5em;
+    margin-left: 3em;
+    margin-right: 5em;
+}
+
+#infoContainer > div {
+    width: 27%;
+    height: 20em;
+    color: whitesmoke;
+    padding: 1em;
+    background-image: url("/Assets/images/infoBackground.jpg");
+}
+
+/* Applying borders to the anchors on the navbar from Bootstrap */
+nav a{
+	display: inline-block;
+	font-weight: bolder;
+    border: 1px solid whitesmoke;
+    margin: 1px;
+}
+
+
