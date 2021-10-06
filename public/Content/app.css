@@ -64,6 +64,32 @@
     background-image: url("/Assets/images/infoBackground.jpg");
 }
 
+div.project {
+	background-image: url("/Assets/images/propertyBackground.jpg");
+	box-shadow: 0 0 2px 2px dimgray;
+	margin-top: 10px;
+	height: 30em;
+    width: 86%;
+    padding: 3em;
+    color: whitesmoke;
+}
+div.projectDesc {
+	display: inline-block;
+	margin-top: 50px;
+	margin-bottom: 20px;
+	width: 69%;
+	text-align: center;
+}
+
+.project-thumbnail {
+    position: relative;
+    bottom: 2em;
+	float: right;
+	display: block;
+	width: 27em;
+	height: 25em;
+}
+
 /* Applying borders to the anchors on the navbar from Bootstrap */
 nav a{
 	display: inline-block;
