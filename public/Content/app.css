@@ -95,6 +95,12 @@ div.projectDesc {
 	height: 25em;
 }
 
+.card {
+    width: 40%;
+    float: left;
+    margin-left: 3em;
+}
+
 /* Applying borders to the anchors on the navbar from Bootstrap */
 nav a{
 	display: inline-block;
