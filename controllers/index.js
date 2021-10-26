@@ -33,7 +33,6 @@ module.exports.displayLoginPage = (req, res, next) => {
         res.render('auth/login', {
             title: "Login",
             messages: req.flash('loginMessage'),
-            displayName: req.user ? req.user.displayName : ''
         })
     }
     else {
@@ -43,12 +42,12 @@ module.exports.displayLoginPage = (req, res, next) => {
 
 module.exports.processLoginPage = (req, res, next) => {
     passport.authenticate('local', (err, user, info) => {
-        //if server err?
+        //if server err
         if (err) {
             return next(err);
         }
 
-        //is there a user login error?
+        //if there is a user login error
         if (!user) {
             req.flash('loginMessage', 'Authentication Error');
             return res.redirect('/login');
@@ -59,7 +58,7 @@ module.exports.processLoginPage = (req, res, next) => {
             if(err) {
                 return next(err);
             }
-            return res.redirect('book-list');
+            return res.redirect('contact-list');
         });
         
     })(req, res, next);
