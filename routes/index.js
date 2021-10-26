@@ -1,34 +1,33 @@
-var express = require('express');
-var router = express.Router();
+let express = require('express');
+let router = express.Router();
+
+let indexController = require('../controllers/index');
 
 /* GET Home page. */
-router.get('/', function(req, res, next) {
-  res.render('index', { title: 'Home' });
-});
+router.get('/', indexController.displayHomePage);
 
 /* GET Home page. */
-router.get('/home', function(req, res, next) {
-  res.render('index', { title: 'Home' });
-});
+router.get('/home', indexController.displayHomePage);
 
 /* GET About Me page. */
-router.get('/about', function(req, res, next) {
-  res.render('index', { title: 'About Me' });
-});
+router.get('/about', indexController.displayAboutMePage);
 
-/* GET My Projects page. */
-router.get('/projects', function(req, res, next) {
-  res.render('index', { title: 'Projects' });
-});
+/* GET Projects page. */
+router.get('/projects', indexController.displayProjectsPage);
 
-/* GET My Services page. */
-router.get('/services', function(req, res, next) {
-  res.render('index', { title: 'Services' });
-});
+/* GET Services page. */
+router.get('/services', indexController.displayServicesPage);
 
-/* GET Contact Me page. */
-router.get('/contact', function(req, res, next) {
-  res.render('index', { title: 'Contacts' });
-});
+/* GET Contact Us page. */
+router.get('/contacts', indexController.displayContactsPage);
+
+/* GET Route for displaying the Login page. */
+router.get('/login', indexController.displayLoginPage);
+
+/* POST Route for processing the Login page. */
+router.post('/login', indexController.processLoginPage);
+
+/* GET Route to perform user Logout */
+router.get('/logout', indexController.performLogout);
 
 module.exports = router;
