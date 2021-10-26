@@ -7,7 +7,7 @@
 
 // IIFE - Immediately Invoked Function Expression
 (function() {
-    
+
     function Start(){
         console.log("App Started...");
 
@@ -17,7 +17,7 @@
             button.addEventListener('click', (event) => {
                 if (!confirm("Are you sure?")){
                     event.preventDefault();
-                    //window.location.assign('/book-list');
+                    window.location.assign('/contact-list');
                 }
             });
         }
