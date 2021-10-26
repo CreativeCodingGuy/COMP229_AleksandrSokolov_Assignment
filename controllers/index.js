@@ -33,6 +33,7 @@ module.exports.displayLoginPage = (req, res, next) => {
         res.render('auth/login', {
             title: "Login",
             messages: req.flash('loginMessage'),
+            displayName: req.user ? req.user.displayName : ''
         })
     }
     else {
