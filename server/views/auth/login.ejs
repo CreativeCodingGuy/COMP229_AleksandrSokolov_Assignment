@@ -11,18 +11,18 @@
     </div>
     <% } %>
 
-    <div class="row">
+    <div class="row" style="background-image: url('/Assets/images/sky.jpg');margin-top: 3em;">
         <div class="offset-md-4 col-md-4">
-            <h1>Login here:</h1>
+            <h1><strong>Login:</strong></h1>
             <form method="POST" autocomplete="off">
                 <fieldset class="form-group">
-                    <label for="username">Username: </label>
+                    <i class="fas fa-user"></i><label for="username"><b>Username: </b></label>
                     <input type="text" class="form-control" name="username" placeholder="Enter username" id="username"
                         required autofocus>
                 </fieldset>
 
                 <fieldset class="form-group">
-                    <label for="password">Password: </label>
+                    <i class="fas fa-unlock"></i><label for="password"><b>Password:</b> </label>
                     <input type="text" class="form-control" name="password" placeholder="Enter password" id="password"
                         required>
                 </fieldset>
@@ -30,7 +30,7 @@
                 <fieldset class="form-group text-right">
                     <input type="submit" class="btn btn-success" value="Login">
                     <a href="/">
-                        <input type="button" class="btn btn-warning" value="Cancel">
+                        <input type="button" class="btn btn-dark" value="Cancel">
                     </a>
                 </fieldset>
             </form>

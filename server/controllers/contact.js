@@ -20,7 +20,7 @@ module.exports.displayContactList = (req, res, next) => {
 
 /* GET Route for displaying the Add page - CREATE operation. */
 module.exports.displayAddPage = (req, res, next) => {
-    res.render('contact/add', {title: 'Add Contact', displayName: req.user ? req.user.displayName : ''});
+    res.render('contact/add', {title: 'Add A New Contact', displayName: req.user ? req.user.displayName : ''});
 };
 
 /* POST Route for processing the Add page - CREATE operation. */
@@ -52,7 +52,7 @@ module.exports.displayUpdatePage = (req, res, next) => {
             res.end(err);    
         } else {
             //show the Update view
-            res.render('contact/update', {title: 'Update Contact', contact: contactToUpdate, displayName: req.user ? req.user.displayName : ''})
+            res.render('contact/update', {title: 'Update The Contact', contact: contactToUpdate, displayName: req.user ? req.user.displayName : ''})
         }
     })
 };
