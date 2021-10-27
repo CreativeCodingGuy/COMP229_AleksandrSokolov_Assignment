@@ -42,26 +42,27 @@ module.exports.processAddPage = (req, res, next) => {
     });
 };
 
-/* GET Route for displaying the Edit page - UPDATE operation. */
-module.exports.displayEditPage = (req, res, next) => {
+/* GET Route for displaying the Update page - UPDATE operation. */
+module.exports.displayUpdatePage = (req, res, next) => {
     let id = req.params.id;
 
-    Contact.findById(id, (err, contactToEdit) => {
+    Contact.findById(id, (err, contactToUpdate) => {
         if (err) {
             console.log(err);
             res.end(err);    
         } else {
-            //show the edit view
-            res.render('contact/edit', {title: 'Edit Contact', contact: contactToEdit, displayName: req.user ? req.user.displayName : ''})
+            //show the Update view
+            res.render('contact/update', {title: 'Update Contact', contact: contactToUpdate, displayName: req.user ? req.user.displayName : ''})
         }
     })
 };
 
-/* POST Route for processing the Edit page - UPDATE operation. */
-module.exports.processEditPage = (req, res, next) => {
+/* POST Route for processing the Update page - UPDATE operation. */
+module.exports.processUpdatePage = (req, res, next) => {
     let id = req.params.id;
 
     let updatedContact = Contact({
+        "_id": id,
         "name": req.body.name,
         "email": req.body.email,
         "number": req.body.number

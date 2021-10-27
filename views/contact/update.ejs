@@ -2,7 +2,7 @@
 
 <%- include ../partials/main_nav.ejs %>
 
-<!-- content for the edit page -->
+<!-- content for the update page -->
 <div class="container">
     <div class="row">
         <div class="offset-md-2 col-md-8">
@@ -32,7 +32,7 @@
                 </div>
 
                 <div class="form-group">
-                    <label for="numberTextField">Year</label>
+                    <label for="numberTextField">Phone Number</label>
                     <input type="text" class="form-control"
                         id="numberTextField"
                         placeholder="Enter the Contact's Phone Number"
@@ -42,11 +42,15 @@
                 </div>
 
                 <button class="btn btn-primary" type="submit">
-                    <i class="fas fa-edit"></i> Submit
+                    <i class="fas fa-edit"></i> Update
                 </button>
 
                 <a href="/contact-list" class="btn btn-warning">
                     <i class="fas fa-undo"></i> Cancel
+                </a>
+
+                <a href="/contact-list/delete/<%= contact.id %>" class="btn btn-danger">
+                    <i class="fas fa-trash-alt"></i> Delete
                 </a>
             </form>
         </div>
