@@ -1,6 +1,6 @@
 {
-  "name": "comp299_assignment-1",
-  "version": "0.0.1",
+  "name": "comp229_assignment",
+  "version": "0.0.2",
   "private": true,
   "scripts": {
     "start": "node ./server.js"
@@ -46,12 +46,17 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/CreativeCodingGuy/COMP299_AleksandrSokolov_Assignment1.git"
+    "url": "git+https://github.com/CreativeCodingGuy/COMP299_AleksandrSokolov_Assignment.git"
   },
   "author": "Aleksandr Sokolov",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/CreativeCodingGuy/COMP299_AleksandrSokolov_Assignment1/issues"
+    "url": "https://github.com/CreativeCodingGuy/COMP299_AleksandrSokolov_Assignment/issues"
   },
-  "homepage": "https://github.com/CreativeCodingGuy/COMP299_AleksandrSokolov_Assignment1#readme"
+  "homepage": "https://github.com/CreativeCodingGuy/COMP299_AleksandrSokolov_Assignment#readme",
+  "keywords": [
+    "Aleksandr",
+    "Sokolov",
+    "Assignment"
+  ]
 }
